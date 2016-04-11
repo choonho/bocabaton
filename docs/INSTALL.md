@@ -289,7 +289,7 @@ edit /etc/httpd/conf.d/bocabaton.conf
     WSGIScriptAlias / /opt/bocabaton/pyengine/wsgi.py
     WSGIPassAuthorization On
 
-    <Directory /opt/bobabaton/pyengine>
+    <Directory /opt/bocabaton/pyengine>
     <Files wsgi.py>
         Require all granted
     </Files>
@@ -314,7 +314,7 @@ mysql -uroot -e "create database pyengine character set utf8 collate utf8_genera
 mkdir /var/log/pyengine
 chown -R apache:apache /var/log/pyengine
 
-cd /opt/bobabaton
+cd /opt/bocabaton
 python manage.py makemigrations
 python manage.py migrate
 
