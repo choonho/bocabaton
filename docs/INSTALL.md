@@ -318,7 +318,6 @@ cd /opt/bobabaton
 python manage.py makemigrations
 python manage.py migrate
 
-rm /var/log/pyengine/api.log
 ~~~
 
 # Restart apache
